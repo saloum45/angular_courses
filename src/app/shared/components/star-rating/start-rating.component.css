@@ -1,0 +1,19 @@
+
+.star-container
+{
+  overflow: hidden;
+  cursor: pointer;
+  /* width: 16px; */
+
+}
+
+i{
+  width: 25px;
+  /* margin: 5px 2Px; */
+}
+
+.star-wrapper
+{
+  width: 125px;
+  cursor: pointer;
+}

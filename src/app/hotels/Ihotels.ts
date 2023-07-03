@@ -3,4 +3,5 @@ export interface Ihot{
   nom :string;
   avis :string;
   prix :number;
+  rating :number;
 }

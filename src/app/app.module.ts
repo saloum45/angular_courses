@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HotelsComponent } from './hotels/hotels.component';
 import { SaisieComponent } from './saisie/saisie.component';
 import { FormsModule} from '@angular/forms';
+import { StarRatingComponent } from './shared/components/star-rating/start-rating.component';
 // import { registerLocaleData } from '@angular/common';
 // import localeFr from '@angular/common/locales/fr';
 // registerLocaleData(localeFr, 'fr');
@@ -14,7 +15,8 @@ import { FormsModule} from '@angular/forms';
   declarations: [
     AppComponent,
     HotelsComponent,
-    SaisieComponent
+    SaisieComponent,
+    StarRatingComponent
   ],
   imports: [
     BrowserModule,

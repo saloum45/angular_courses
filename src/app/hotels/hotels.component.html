@@ -27,6 +27,7 @@
           <h5 class="card-title" >{{hotel.nom |uppercase }} </h5>
           <p class="card-text">{{hotel.avis}}</p>
           <p class="card-text">{{hotel.prix |currency :'EUR' : 'symbol' }} par nuit</p>
+          <app-star-rating [rating]="hotel.rating"></app-star-rating>
         </div>
       </div>
     </div>
