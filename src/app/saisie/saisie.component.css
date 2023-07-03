@@ -1,0 +1,10 @@
+.contenu{
+  width: 500px;
+  margin: 0 auto;
+}
+
+.contenu div:nth-child(3){
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}

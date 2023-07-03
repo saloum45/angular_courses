@@ -1,0 +1,53 @@
+<div class="container text-center">
+  <h1 >les hotels is running</h1>
+
+</div>
+
+<div class="container">
+  <hr>
+  <div class="my-2">
+    <div class="row">
+      <div class="col-md-4">
+        <span>Filtre actuel : </span>
+        <b>{{doFilter}}</b>
+      </div>
+      <div class="col-md-8 Form-group">
+        <input type="text" class="form-control" [(ngModel)]="doFilter">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-3 g-4" >
+    <div class="col mb-2" *ngFor="let hotel of filteredHotel">
+      <div class="card">
+        <img src="{{hotel.img}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" >{{hotel.nom |uppercase }} </h5>
+          <p class="card-text">{{hotel.avis}}</p>
+          <p class="card-text">{{hotel.prix |currency :'EUR' : 'symbol' }} par nuit</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="contenu">
+    <div class="mb-3">
+      <label for="nom" class="form-label">Hotels</label>
+      <input type="text" class="form-control" id="hotel" name="hotel" >
+    </div>
+    <div class="mb-3">
+      <label for="prenom" class="form-label">reservation</label>
+      <input type="text" class="form-control" id="reservation" name="reservation" >
+    </div>
+    <div class="mb-3">
+      <i class="bi bi-arrow-down"></i>
+      <button class="btn btn-primary">send</button>
+
+    </div>
+  </div>
+
+</div>
