@@ -1,0 +1,14 @@
+<p>base-donnee works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col" *ngFor="let donne of getJsonValue">
+      <div class="alert alert-danger">
+          {{donne.pseudo}}
+      </div>
+      <div class="alert alert-dark">
+          {{donne.message}}
+      </div>
+      {{donne|json}}
+    </div>
+  </div>
+</div>

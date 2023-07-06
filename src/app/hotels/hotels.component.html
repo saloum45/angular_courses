@@ -17,7 +17,11 @@
     </div>
   </div>
 </div>
-
+<div class="container">
+  <div class="alert alert-primary" *ngIf="!!receiveRating">
+    {{receiveRating}}
+  </div>
+</div>
 <div class="container">
   <div class="row row-cols-1 row-cols-md-3 g-4" >
     <div class="col mb-2" *ngFor="let hotel of filteredHotel">
@@ -27,7 +31,7 @@
           <h5 class="card-title" >{{hotel.nom |uppercase }} </h5>
           <p class="card-text">{{hotel.avis}}</p>
           <p class="card-text">{{hotel.prix |currency :'EUR' : 'symbol' }} par nuit</p>
-          <app-star-rating [rating]="hotel.rating"></app-star-rating>
+          <app-star-rating [rating]="hotel.rating" (starRatingClick)="receiveRatingclicked($event)"></app-star-rating>
         </div>
       </div>
     </div>

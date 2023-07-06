@@ -7,6 +7,8 @@ import { HotelsComponent } from './hotels/hotels.component';
 import { SaisieComponent } from './saisie/saisie.component';
 import { FormsModule} from '@angular/forms';
 import { StarRatingComponent } from './shared/components/star-rating/start-rating.component';
+import { HttpClientModule } from '@angular/common/http';
+import { BaseDonneeComponent } from './base-donnee/base-donnee.component';
 // import { registerLocaleData } from '@angular/common';
 // import localeFr from '@angular/common/locales/fr';
 // registerLocaleData(localeFr, 'fr');
@@ -16,12 +18,14 @@ import { StarRatingComponent } from './shared/components/star-rating/start-ratin
     AppComponent,
     HotelsComponent,
     SaisieComponent,
-    StarRatingComponent
+    StarRatingComponent,
+    BaseDonneeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
